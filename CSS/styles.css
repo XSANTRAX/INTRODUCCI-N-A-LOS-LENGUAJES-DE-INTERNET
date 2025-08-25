@@ -1,0 +1,116 @@
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.element{
+    width: 65px;
+    height: 65px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.element:hover {
+    transform: scale(1.1);
+}
+
+.element .numero-atomico {
+    font-size: 12px;
+    text-align: left;
+    color: black;
+}
+
+
+.element .simbolo {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.element .nombre {
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
+
+.metales-alcalinos {
+    background-color: #f4cccc;
+}
+
+.metaloides {
+    background-color: #a2a25f;
+}
+
+.actinidos {
+    background-color: #05deff;
+}
+
+.alcalinoterreos {
+    background-color: #c94f7c;
+}
+
+.no-metales {
+    background-color: #b2d98c;
+}
+
+.metales-de-trasicion {
+    background-color: #007bff;
+}
+
+.desconocidos {
+    background-color: #2f4f4f;
+}
+
+.gases-nobles {
+    background-color: #d16d76;
+}
+
+.metales-postransición {
+    background-color: #6a5acd;
+}
+
+.latanidos {
+    background-color: #4ca1af;
+}
+
+.text-act{
+    color: #05deff;
+}
+
+.text-lat{
+    color: #4ca1af;
+}
+
+.text-post{
+    color: #6a5acd;
+}
+
+.text-gasno{
+    color: #d16d76;
+}
+
+.text-desc{
+    color: #2f4f4f;
+}
+
+.text-tras{
+    color: #007bff;
+}
+
+.text-nom{
+    color: #b2d98c;
+}
+
+.text-alcr{
+    color: #c94f7c;
+}
+
+.text-met{
+    color: #a2a25f;
+}
+
+.text-alcn{
+    color: #f4cccc;
+}
+
+
