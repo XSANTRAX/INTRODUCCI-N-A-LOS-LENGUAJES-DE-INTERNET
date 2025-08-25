@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=labe, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://tse2.mm.bing.net/th/id/OIP.WXyh0atVVuS7K5WmDls8WwAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3s" alt="Simbolo de una clinica veterinaria">
+    <h3>Datos del dueño</h3>
+    <form action="/pet-mascotas" method="post">
+    <label for="nombre">Nombre: </label>
+    <input type="text" name="nombre" id="nombre" required>
+    <p></p>
+    <label for="apellido">Apellido: </label>
+    <input type="text" name="apellido" id="apellido" required>
+    <p></p>
+    <label for="contacto">Contacto: </label>
+    <input type="number" name="contacto" id="contacto" required>
+    <p></p>
+    <label for="ubicacion">Ubicación: </label>
+    <input type="text" name="ubicacion" id="ubicacion" required>
+    <p></p>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+    <p></p>
+    <h3>Datos de la mascota</h3>
+    <label for="nombrem">Nombre de la mascota: </label>
+    <input type="text" name="nombrem" id="nombrem" required>
+    <p></p>
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" id="edad" required>
+    <p></p>
+    <label for="genero">Genero: </label>
+    <label for="macho">Macho</label>
+    <input type="radio" name="genero" id="genero" value="macho">
+    <label for="hembra">Hembra</label>
+    <input type="radio" name="genero" id="genero" value="hembra" required>
+    <p></p>
+    <label for="tipom">Tipo de mascota: </label>
+    <label for="perro">Perro</label>
+    <input type="radio" name="tipom" id="tipom" value="perro">
+    <label for="gato">Gato</label>
+    <input type="radio" name="tipom" id="tipom" value="gato">
+    <label for="pez">Pez</label>
+    <input type="radio" name="tipom" id="tipom" value="pez">
+    <label for="hamster">Hámster</label>
+    <input type="radio" name="tipom" id="tipom" value="hamster">
+    <label for="otro">Otro</label>
+    <input type="radio" name="tipom" id="tipom" value="otro" required>
+    <p></p>
+    <label for="especie-raza">Especie-raza: </label>
+    <input type="text" name="especie-raza" id="especie-raza" required>
+    <p></p>
+    <label for="especialidad">Especialidad: </label>
+    <select name="especialidad" id="especialidad" required>
+        <option value="">Seleccione una especialidad</option>
+        <option value="">Medicina Interna</option>
+        <option value="">Cirugía</option>
+        <option value="">Odontología</option>
+        <option value="">Neurología</option>
+        <option value="">Oftalmología</option>
+        <option value="">Cardiología</option>
+        <option value="">Nutrición</option>
+        <option value="">Dermatologia</option>
+        <option value="">Parasitologia</option>
+    </select>
+    <p></p>
+    <label for="comportamiento">Comportamiento: </label>
+    <label for="agresivo">Agresivo</label>
+    <input type="checkbox" name="comportamiento[]" id="agresivo" value="agresivo">
+    <label for="timido">Timido</label>
+    <input type="checkbox" name="comportamiento[]" id="timido" value="timido">
+    <label for="nervioso">Nervioso</label>
+    <input type="checkbox" name="comportamiento[]" id="nervioso" value="nervioso">
+    <label for="sociable">Sociable</label>
+    <input type="checkbox" name="comportamiento[]" id="sociable" value="sociable">
+    <label for="apatico">Apático</label>
+    <input type="checkbox" name="comportamiento[]" id="apatico" value="apatico">
+    <label for="jugueton">Juguetón</label>
+    <input type="checkbox" name="comportamiento[]" id="jugueton" value="jugueton">
+    <label for="letargico">Letárgico</label>
+    <input type="checkbox" name="comportamiento[]" id="letargico" value="letargico">
+    <label for="territorial">Territorial</label>
+    <input type="checkbox" name="comportamiento[]" id="territorial" value="territorial">
+    <label for="miedoso">Miedoso</label>
+    <input type="checkbox" name="comportamiento[]" id="miedoso" value="miedoso">
+    <label for="desorientado">Desorientado</label>
+    <input type="checkbox" name="comportamiento[]" id="desorientado" value="desorientado">
+    <p></p>
+    <button type="submit" value="enviar" id="btnenviar">Enviar</button>
+    </form>
+</body>
+</html>
