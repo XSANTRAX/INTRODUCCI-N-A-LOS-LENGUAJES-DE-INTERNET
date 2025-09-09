@@ -1,0 +1,170 @@
+
+body { /* Define el estilo del cuerpo de la pestaña */
+  background-color: #c7c7c7;  /* Se le coloca color de fondo a la pagina */
+}
+
+.fondo{ /* Define el estilo de la imagen de fondo */
+  background-image: url(../IMAGE/noticolombia.png); /* Se le coloca la imagen de fondo */
+  position: absolute; /* Se coloca la imagen en posicion absoluta (posiciona al elemento en el contenedor padre mas cercano en este caso <body>)*/
+  background-position: center; /* Se coloca la imagen centrada en el elemento en este caso la pagina como imagen de fondo*/
+  background-repeat: no-repeat; /* No permite que se repite la imagen en el elemento en este caso el body */
+  background-size: contain; /* La imagen se ajusta a su contenedor sin recortarse */
+  width: 100%; /* Se coloca el ancho de la imagen en 100% osea ocupara todo el ancho de su contenedor */
+  height: 100%; /* Se coloca el alto de la imagen en 100% osea ocupara todo el alto de su contenedor */
+  opacity: 0.05; /* Se coloca el valor de opacidad en 0.05 osea que tan visible es la imagen al nivel de ser casi transparente */
+}
+
+* { /* Se aplica la propiedad * a todos los elementos y se usa para que no vaya a ver una separación con el contenido y el borde de la pestaña */
+  margin: 0; /* Se aplica para que no vaya a tener ninguna margen con respecto a la pestaña */
+}
+
+.menu-principal { /* Define el estilo del menu principal */
+  position: sticky; /* La posición sticky es recomendada por su comportamiento de relative que se mantiene en el flujo normal del documento hasta hacer scroll (desplazamiento) que si se queda fijo para su visualización*/
+  background-color: #0a3d62; /* Se coloca el color de fondo del menu principal */
+  width: 100%;
+  margin: 0; /* Se aplica para que tenga alguna margen o espaciado con respecto a los demas contenedores en este caso no se requiere espaciado*/
+  padding: 0; /* Se aplica para que tenga algun espaciado con respecto al contenido con su contenedor en este caso no se requiere espaciado*/
+  border: 0; /* Se aplica para que tenga algun borde que recubra el contenedor  en este caso no se requiere borde*/
+  /* overflow: hidden;  Se aplica si tu menu no tiene como posición sticky y sirve para recorta cualquier contenido que se desborde del área visible del elemento*/
+}
+
+.menu-principal nav { /* Define el estilo del contenedor de navegación */
+  display: flex; /* Display define como se comporta visualmente un elemento y flex es un contenedor flexible en una dimensión osea o es vertical o horizontal*/
+  justify-content: space-between; /* Se utiliza para distribuir los elementos en este caso dejando espación uninforme entre ellos pero sin espacion en los extremos ademas del primer elemento alinear a la derecha y el ultimo a la izquierda (solo pa contenedores flexibles o grid)*/
+  align-items: center; /* Dependiendo de como este ubicado su contenedor si horizontal o vertical se alineara el contenido en el centro en su contraparte */
+  padding: 1em;
+  margin: 0 auto; /* El 0 define que no tendra margen en el eje vertical y auto se definira de forma automatica referemte al eje horizontal*/
+}
+
+.izqui h3 { /* Define el estilo del título principal o nombre de la pagina */
+  margin: 0;
+  color: white; /*define el color de la letra*/
+  font-family: 'Courier New', Courier, monospace; /*define el tipo de letra*/
+  font-size: 2em; /*define el tamaño de la letra*/
+}
+
+.derech { /* Define el estilo del contenedor de enlaces del menu principal */
+  display: flex;
+  gap: 2em; /*Define el espaciado entre los enlaces se utiliza si su contenedor es flex, grid o columns*/
+}
+
+.derech a { /* Define el estilo del enlace del menu principal */
+  color: white;
+  text-decoration: none; /*Define el estilo del texto del enlace en este caso que no tenga ninguna decoración*/
+  font-weight: 500; /*Sirve para remarcar la letra de una forma sutil*/
+  padding: 0 10em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.derech a:hover { /* Define el estilo del enlace del menu principal al pasar el cursor por encima */
+  color: gray; /*Define el color del texto del enlace al pasar el cursor por encima*/
+  transform: translateY(-20%); /* levanta ligeramente el enlace cuando el cursor pasa por encima*/
+}
+
+.resumen { /* Define el estilo del contenedor de resumen */
+  text-align: center; /*Define el alineamiento del texto del contenedor en este caso que sea centrado*/
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 2em;
+  line-height: 1.6; /*Define el espaciado entre líneas*/
+}
+
+table{ /* Define el estilo de la tabla */
+  width: 80%;
+  border-collapse: collapse; /*Define el estilo de las celdas de la tabla*/
+  margin: 0 auto;
+  
+}
+
+th { /* Define el estilo de las cabeceras de la tabla */
+  padding: 15px;
+  border: 1px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gainsboro;
+}
+
+td{ /* Define el estilo de las celdas de la tabla */
+  padding: 15px;
+  border: 1px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #afd7f8	;
+}
+
+td a{ /* Define el estilo de los enlaces de las celdas de la tabla */
+ text-decoration: none;
+}
+
+td a:hover{ /* Define el estilo de los enlaces de las celdas de la tabla al pasar el cursor por encima */
+  background-color: #D3D3D3;
+}
+
+.card{ /* Define el estilo de la tarjeta de noticias */
+  display: grid; /* grid es un contenedor de forma bidimensional osea es vertical y horizontal a la vez*/
+  grid-template-columns: repeat(4, 1fr); /* Se define el numero de columnas y el ancho de cada una de ellas*/
+  width: 70%;
+  gap: 1.5em;
+  margin: 2em auto;
+}
+
+.not1, .not2, .not3, .not4{ /* Define el estilo de cada una de las tarjetas de noticias */
+  border: 2px solid black; /* Define el borde de la tarjeta en este un borde continuo, no muy remarcado y negro*/
+    padding: 13%; 
+    text-align: center;
+    color: #edff85;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*flex: 1; se utiliza para definir el espacio que va a ocupar dentro del contenedor solo sirve si el display es flex */
+}
+ .not1{ /* Define el estilo de la imagen de fondo de la primera tarjeta de noticias */
+  background-image: url(../IMAGE/colombia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  aspect-ratio: 2 / 3;
+  opacity: 0.7;
+}
+
+.not2{ /* Define el estilo de la imagen de fondo de la segunda tarjeta de noticias */
+  background-image: url(../IMAGE/james.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* La imagen cubre todo su contenedor aunque tenga que recortarse */
+  background-position: center; /* La imagen se centra en su contenedor */
+  margin: auto;
+  aspect-ratio: 2 / 3; /* Sirve para mantener una proporción fija entre ancho y alto, sin importar el contenido o el tamaño del contenedor, en este caso seria 2 unidades de ancho por cada 3 unidades de alto*/
+  opacity: 0.7;
+}
+
+.not3{ /* Define el estilo de la imagen de fondo de la tercera tarjeta de noticias */
+  background-image: url(../IMAGE/meme.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+  aspect-ratio: 1.5 / 1.2;
+  opacity: 0.7;
+}
+
+.not4{ /* Define el estilo de la imagen de fondo de la cuarta tarjeta de noticias */
+  background-image: url(../IMAGE/messi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  aspect-ratio: 4 / 6;
+  opacity: 0.7;
+}
+
+.not1:hover, .not2:hover, .not3:hover, .not4:hover{  /* Define el estilo de la imagen de fondo de la tarjeta de noticias al pasar el cursor por encima */
+  transform: scale(1.1);
+}
+
+.linkcard { /* Define el estilo de los enlaces de la tarjeta de noticias */
+  text-decoration: none;     
+  flex: 1;
+}
+
+.linkred{ /* Define el estilo de los enlaces de la redes sociales */
+  text-decoration: none;
+}
